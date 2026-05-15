@@ -103,9 +103,9 @@ def main():
             basket_contents = ""
             for items in user["basket"]:
                 basket_contents += items + ", "
-            print("You have " + basket_contents + f"in your basket and ${user["wallet"]:.3} in your wallet.")
+            print("You have " + basket_contents + f"in your basket and ${user['wallet']:.3} in your wallet.")
         elif buying == "check" and len(user["basket"]) == 0:
-            print(f"You don't have anything in your basket yet! But you have ${user["wallet"]:.3} in your wallet.")
+            print(f"You don't have anything in your basket yet! But you have ${user['wallet']:.3} in your wallet.")
 
     if len(user["basket"]) == 0:
         print("\nAww, well I hope you'll purchase from us next time! Toodles!")
